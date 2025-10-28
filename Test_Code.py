@@ -2,7 +2,7 @@ from machine import Pin, UART
 import time, ujson
 
 # === UART Setup ===
-uart = UART(0, baudrate=921600, tx=Pin(0), rx=Pin(1))
+uart = UART(0, baudrate=921600, tx=Pin(16), rx=Pin(17))
 
 # === Motor Setup ===
 IN1 = Pin(2, Pin.OUT)
